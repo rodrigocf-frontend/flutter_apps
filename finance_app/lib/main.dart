@@ -1,4 +1,5 @@
 import 'package:finance_app/screens/login.dart';
+import 'package:finance_app/app_tabs/app_tabs.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'l10n/app_localizations.dart';
@@ -24,7 +25,10 @@ class MainApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: .fromSeed(seedColor: const Color(0xFF6C5FD4)),
       ),
-      routes: {"/": (context) => LoginScreen()},
+      routes: {
+        "/": (context) => LoginScreen(),
+        "/home": (context) => AppTabs(),
+      },
     );
   }
 }
