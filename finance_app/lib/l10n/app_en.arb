@@ -1,0 +1,8 @@
+{
+  "@@locale": "en",
+  "authTitle": "Finance",
+  "authSubtitle":"control your finance",
+  "formEmail":"Email",
+  "formPassword":"Password",
+  "commonEnter":"Login"
+}
