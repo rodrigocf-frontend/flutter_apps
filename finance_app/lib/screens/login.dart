@@ -1,3 +1,4 @@
+import 'package:finance_app/l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -5,6 +6,9 @@ class LoginScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final scheme = Theme.of(context).colorScheme;
+    final translation = AppLocalizations.of(context)!;
+
     return Scaffold(
       body: Padding(
         padding: .all(45),
@@ -12,12 +16,16 @@ class LoginScreen extends StatelessWidget {
           mainAxisAlignment: .center,
           crossAxisAlignment: .stretch,
           children: [
-            Text(textAlign: .center, style: TextStyle(fontSize: 40), "finance"),
-            Text(textAlign: .center, "controle suas finanças"),
+            Text(
+              textAlign: .center,
+              style: TextStyle(fontSize: 40, color: scheme.onPrimaryContainer),
+              translation.authTitle,
+            ),
+            Text(textAlign: .center, translation.authSubtitle),
             SizedBox(height: 40),
             TextField(
               decoration: InputDecoration(
-                hintText: "email",
+                hintText: translation.formEmail,
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(10),
                 ),
@@ -26,14 +34,17 @@ class LoginScreen extends StatelessWidget {
             SizedBox(height: 20),
             TextField(
               decoration: InputDecoration(
-                hintText: "password",
+                hintText: translation.formPassword,
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(10),
                 ),
               ),
             ),
             SizedBox(height: 20),
-            FilledButton(onPressed: () {}, child: Text("Entrar")),
+            FilledButton(
+              onPressed: () {},
+              child: Text(translation.commonEnter),
+            ),
           ],
         ),
       ),
