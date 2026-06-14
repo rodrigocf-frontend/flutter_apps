@@ -8,6 +8,7 @@ class LoginScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final scheme = Theme.of(context).colorScheme;
     final translation = AppLocalizations.of(context)!;
+    final navigation = Navigator.of(context);
 
     return Scaffold(
       body: Padding(
@@ -42,7 +43,7 @@ class LoginScreen extends StatelessWidget {
             ),
             SizedBox(height: 20),
             FilledButton(
-              onPressed: () {},
+              onPressed: () => navigation.popAndPushNamed("/home"),
               child: Text(translation.commonEnter),
             ),
           ],
