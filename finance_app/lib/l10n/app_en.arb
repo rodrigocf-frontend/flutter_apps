@@ -4,5 +4,10 @@
   "authSubtitle":"control your finance",
   "formEmail":"Email",
   "formPassword":"Password",
-  "commonEnter":"Login"
+  "commonEnter":"Login",
+  "tabHome":"Home",
+  "tabTransactions":"Transactions",
+  "tabAdd":"Add",
+  "tabCharts":"Graphs",
+  "tabProfile":"Profile"
 }

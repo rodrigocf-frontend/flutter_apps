@@ -4,5 +4,10 @@
   "authSubtitle":"controle de finanças",
   "formEmail":"Email",
   "formPassword":"Password",
-  "commonEnter":"Entrar"
+  "commonEnter":"Entrar",
+  "tabHome":"Home",
+  "tabTransactions":"Transações",
+  "tabAdd":"Adicionar",
+  "tabCharts":"Gráficos",
+  "tabProfile":"Perfil"
 }

@@ -127,6 +127,36 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Login'**
   String get commonEnter;
+
+  /// No description provided for @tabHome.
+  ///
+  /// In en, this message translates to:
+  /// **'Home'**
+  String get tabHome;
+
+  /// No description provided for @tabTransactions.
+  ///
+  /// In en, this message translates to:
+  /// **'Transactions'**
+  String get tabTransactions;
+
+  /// No description provided for @tabAdd.
+  ///
+  /// In en, this message translates to:
+  /// **'Add'**
+  String get tabAdd;
+
+  /// No description provided for @tabCharts.
+  ///
+  /// In en, this message translates to:
+  /// **'Graphs'**
+  String get tabCharts;
+
+  /// No description provided for @tabProfile.
+  ///
+  /// In en, this message translates to:
+  /// **'Profile'**
+  String get tabProfile;
 }
 
 class _AppLocalizationsDelegate

@@ -22,4 +22,19 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get commonEnter => 'Login';
+
+  @override
+  String get tabHome => 'Home';
+
+  @override
+  String get tabTransactions => 'Transactions';
+
+  @override
+  String get tabAdd => 'Add';
+
+  @override
+  String get tabCharts => 'Graphs';
+
+  @override
+  String get tabProfile => 'Profile';
 }
